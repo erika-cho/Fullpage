@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* ======================================================
+	Common.
+=======================================================*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+a:visited {
+
+}
+a:hover {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+/* ======================================================
+  Blocks.
+=======================================================*/
+
+#wrapper {
+  position: relative;
+}
+
+#contents {
+  height: 100%;
+  position: relative;
+}
+
+.inner {
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ======================================================
+   Header.
+=======================================================*/
+header {
+  width: 100%;
+  padding: 15px 30px;
+  background: #333;
+  border-bottom: 5px solid #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+
+/* ======================================================
+  Contents.
+=======================================================*/
+.section {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+
+.section h2 {
+  width: 100%;
+  font-size: 300%;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  z-index: 1;
+}
+
+#section01 {
+  background: #e68585;
+}
+
+#section02 {
+  background: #e6d185;
+}
+
+#section03 {
+  background: #acd281;
+}
+
+#section04 {
+  background: #85bee6;
+}
+
+#section05 {
+  background: #c485e6;
+}
+
+#main-back {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* --------------------------------------
+  clearfix.
+---------------------------------------*/
+.clearfix:after,
+.inner:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
